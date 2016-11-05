@@ -1,10 +1,10 @@
-        var resultOutput = document.getElementById("result-here");
-        var resultButton = document.getElementById("button-1");
+        var resultOutput = document.getElementById("resultHere");
+        var resultButton = document.getElementById("getResult");
 
         resultButton.addEventListener("click", getTheResult);
 
         function getTheResult() {
-            var userInput = document.getElementById("input-area").value.toString();
+            var userInput = document.getElementById("uInput").value.toString();
             var splitData = userInput.split(",");
             var findRandom = splitData[Math.floor(Math.random() * splitData.length)];
             resultOutput.innerHTML = findRandom;
